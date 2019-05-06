@@ -15,9 +15,9 @@ import com.indev.scrapx.data.annotations.ScrapedMap;
 import com.indev.scrapx.data.annotations.ScrapedText;
 import com.indev.scrapx.data.annotations.ScrapingUrl;
 
-@ScrapingUrl("https://isc-careers.maroc.sqli.com/main/formation/liste?agence=0&businessUnit=&statut=0&annee=2019")
-@Authentication(loginURL = "https://isc-careers.maroc.sqli.com/j_spring_security_check",method = Connection.Method.POST)
-@Credentials(userName = testClass.username,userNameInput = "j_username",password = testClass.password, passwordInput = "j_password")
+@ScrapingUrl("")
+@Authentication(loginURL = "",method = Connection.Method.POST)
+@Credentials(userName = "",userNameInput = "",password = "", passwordInput = "")
 @ScrapedElement("table tbody tr")
 public class Information {
 
