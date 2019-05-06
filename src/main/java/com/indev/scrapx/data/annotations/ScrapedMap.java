@@ -1,4 +1,4 @@
-package com.indev.scrapx.data;
+package com.indev.scrapx.data.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,7 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface ScrapedElement {
-    String value();
+@Target(ElementType.FIELD)
+public @interface ScrapedMap {
+    String headerElement();
+    String valueElement();
 }
