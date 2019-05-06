@@ -1,4 +1,4 @@
-package test;
+package com.indev.scrapx;
 
 import java.util.Collections;
 import java.util.List;

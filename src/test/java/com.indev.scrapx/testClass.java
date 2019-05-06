@@ -1,4 +1,4 @@
-package test;
+package com.indev.scrapx;
 
 public class testClass {
     public static final String username="mboukhenaif";

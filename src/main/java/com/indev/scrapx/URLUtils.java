@@ -16,8 +16,7 @@ public class URLUtils {
             URL url = new URL(rawUrl);
             StringBuilder encodedUrl = new StringBuilder(url.getProtocol());
             String path = url.getPath().substring(1, url.getPath().length());
-            String escapedPath = Arrays.stream(path.split("/")).map(pathSegment -> UrlEscapers.urlPathSegmentEscaper().escape(pathSegment)).collect(Collectors.joining("/"));
-            encodedUrl.append("://").append(url.getHost()).append("/").append(escapedPath);
+            String escapedPath = Arrays.stream(path.split("/")).map(pathSegment -> UrlEscapers.urlPathSegmentEscaper().escape(pathSegment)).collect(Collectors.joining("/"));            encodedUrl.append("://").append(url.getHost()).append("/").append(escapedPath);
             if (url.getQuery() != null) {
                 encodedUrl.append("?").append(url.getQuery());
             }

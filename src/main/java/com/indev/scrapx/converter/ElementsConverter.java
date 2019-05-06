@@ -6,5 +6,5 @@ import java.io.IOException;
 
 @FunctionalInterface
 public interface ElementsConverter<T> {
-    T convert(Elements elements) throws IOException;
+    T convert(Elements elements) throws Exception;
 }
